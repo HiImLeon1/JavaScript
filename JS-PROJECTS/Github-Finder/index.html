@@ -20,14 +20,14 @@
 </div>
 <div class="top2">
     <img src="ex.png" alt="No Search Users" class="prpic">
-    <button class="prbt1"id="p1">Public Repos:</button>
-    <button class="prbt2"id="p2">Public Gists:</button>
-    <button class="prbt3"id="p3">Followers:</button>
-    <button class="prbt4"id="p4">Following:</button>
-    <div class="pr1">Company:</div>
-    <div class="pr2">Website/Blog:</div>
-    <div class="pr3">Location:</div>
-    <div class="pr4">Member Since:</div>
+    <button class="prbt1"id="p1">Public Repos: 0</button>
+    <button class="prbt2"id="p2">Public Gists: 0</button>
+    <button class="prbt3"id="p3">Followers: 0</button>
+    <button class="prbt4"id="p4">Following: 0</button>
+    <div class="pr1">Company: none</div>
+    <div class="pr2">Website/Blog: none</div>
+    <div class="pr3">Location: none</div>
+    <div class="pr4">Member Since: none</div>
 
     <button type="submit" class="search-btn">View Profile</button>
 </div>
@@ -35,24 +35,34 @@
     <h2 class="repo">Latest Repos
     </h2>
     <div class="repo1">
-        <button class="repobtn1-1">Stars: </button>
-        <button class="repobtn1-2">Watchers: </button>
-        <button class="repobtn1-3">Forks: </button>
+        <button style="position: absolute;background: none;color: skyblue" id="r1" onclick="clicked1()"
+                onmouseover="this.style.color='purple'"
+                onmouseout="this.style.color='skyblue'">JavaScript</button>
+        <button class="repobtn1-1">Stars: 0</button>
+        <button class="repobtn1-2">Watchers: 0</button>
+        <button class="repobtn1-3">Forks: 0</button>
     </div>
     <div class="repo2">
-        <button class="repobtn2-1">Stars: </button>
-        <button class="repobtn2-2">Watchers: </button>
-        <button class="repobtn2-3">Forks: </button>
+        <button style="position: absolute;background: none;color: skyblue" id="r2" onclick="clicked2()"
+                onmouseover="this.style.color='purple'"
+                onmouseout="this.style.color='skyblue'">HTML-CSS</button>
+        <button class="repobtn2-1">Stars: 0</button>
+        <button class="repobtn2-2">Watchers: 0</button>
+        <button class="repobtn2-3">Forks: 0</button>
     </div>
     <div class="repo3">
-        <button class="repobtn3-1">Stars: </button>
-        <button class="repobtn3-2">Watchers: </button>
-        <button class="repobtn3-3">Forks: </button>
+        <button style="position: absolute; background: none;color: skyblue" id="r3" onclick="clicked3()"
+                onmouseover="this.style.color='purple'"
+                onmouseout="this.style.color='skyblue'">Java_Basic</button>
+        <button class="repobtn3-1">Stars: 0</button>
+        <button class="repobtn3-2">Watchers: 0</button>
+        <button class="repobtn3-3">Forks: 0</button>
     </div>
     <div class="repo4">
-        <button class="repobtn4-1">Stars: </button>
-        <button class="repobtn4-2">Watchers: </button>
-        <button class="repobtn4-3">Forks: </button>
+        <button style="position: absolute; background: none;color: skyblue" id="r4" onclick="clicked4()">-</button>
+        <button class="repobtn4-1">Stars: -</button>
+        <button class="repobtn4-2">Watchers: -</button>
+        <button class="repobtn4-3">Forks: -</button>
     </div>
 </div>
 
