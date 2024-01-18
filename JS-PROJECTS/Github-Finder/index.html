@@ -1,74 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>GithubFinder</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.min.css">
+  <title>GitHub Finder</title>
 </head>
 <body>
-<script src="script.js"></script>
-<header class="header-title">
-    GitHub Finder
-</header>
-<div class="top1">
-    <h1 class="srcgit">Search GitHub Users</h1>
-    <h2 class="srcex">Enter a username to fetch a user profile and repos</h2>
-
-    <input type="text" class="username" placeholder="Username" id="nameinput">
-
-</div>
-<div class="top2">
-    <img src="ex.png" alt="No Search Users" class="prpic">
-    <button class="prbt1"id="p1">Public Repos: 0</button>
-    <button class="prbt2"id="p2">Public Gists: 0</button>
-    <button class="prbt3"id="p3">Followers: 0</button>
-    <button class="prbt4"id="p4">Following: 0</button>
-    <div class="pr1">Company: none</div>
-    <div class="pr2">Website/Blog: none</div>
-    <div class="pr3">Location: none</div>
-    <div class="pr4">Member Since: none</div>
-
-    <button type="submit" class="search-btn">View Profile</button>
-</div>
-<div class="top3">
-    <h2 class="repo">Latest Repos
-    </h2>
-    <div class="repo1">
-        <button style="position: absolute;background: none;color: skyblue" id="r1" onclick="clicked1()"
-                onmouseover="this.style.color='purple'"
-                onmouseout="this.style.color='skyblue'">JavaScript</button>
-        <button class="repobtn1-1">Stars: 0</button>
-        <button class="repobtn1-2">Watchers: 0</button>
-        <button class="repobtn1-3">Forks: 0</button>
+  <nav class="navbar navbar-dark bg-primary mb-3">
+    <div class="container">
+      <a href="#" class="navbar-brand">GitHub Finder</a>
     </div>
-    <div class="repo2">
-        <button style="position: absolute;background: none;color: skyblue" id="r2" onclick="clicked2()"
-                onmouseover="this.style.color='purple'"
-                onmouseout="this.style.color='skyblue'">HTML-CSS</button>
-        <button class="repobtn2-1">Stars: 0</button>
-        <button class="repobtn2-2">Watchers: 0</button>
-        <button class="repobtn2-3">Forks: 0</button>
+  </nav>
+  <div class="container searchContainer">
+    <div class="search card card-body">
+      <h1>Search GitHub Users</h1>
+      <p class="lead">Enter a username to fetch a user profile and repos</p>
+      <input type="text" id="searchUser" class="form-control" placeholder="GitHub Username...">
     </div>
-    <div class="repo3">
-        <button style="position: absolute; background: none;color: skyblue" id="r3" onclick="clicked3()"
-                onmouseover="this.style.color='purple'"
-                onmouseout="this.style.color='skyblue'">Java_Basic</button>
-        <button class="repobtn3-1">Stars: 0</button>
-        <button class="repobtn3-2">Watchers: 0</button>
-        <button class="repobtn3-3">Forks: 0</button>
-    </div>
-    <div class="repo4">
-        <button style="position: absolute; background: none;color: skyblue" id="r4" onclick="clicked4()">-</button>
-        <button class="repobtn4-1">Stars: -</button>
-        <button class="repobtn4-2">Watchers: -</button>
-        <button class="repobtn4-3">Forks: -</button>
-    </div>
-</div>
+    <br>
+    <div id="profile"></div>
+  </div>
 
-<footer id='container' class="gfoot">
-    GitHub Finder ©
-</footer>
+  <footer class="mt-5 p-3 text-center bg-light">
+    GitHub Finder &copy;
+  </footer>
+  
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
+  <script src="github.js"></script>
+  <script src="ui.js"></script>
+  <script src="app.js"></script>
 </body>
 </html>
